@@ -1,3 +1,20 @@
-<p>
-  search works!
-</p>
+<div class="row">
+  <div class="col">
+    <input 
+      [(ngModel)]='inputSearch'
+      (keyup)='searchArtist()'  
+      type="text" 
+      class="form-control"
+      placeholder="search artist">
+  </div>
+</div>
+
+<div class="card-columns">
+
+    <div *ngFor='let arist of artist' class="card">
+      <img [src]="arist.images[0].url" class="card-img-top" [alt]="arist.name">
+      <div class="card-body">
+        <h5 class="card-title">{{ arist.name }}</h5>
+      </div>
+  
+    </div>

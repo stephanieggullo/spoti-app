@@ -12,6 +12,9 @@ import { HomeComponent } from './comoponents/home/home.component';
 import { SearchComponent } from './comoponents/search/search.component';
 import { ArtistComponent } from './comoponents/artist/artist.component';
 import { NavbarComponent } from './comoponents/shared/navbar/navbar.component';
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { CardsComponent } from './comoponents/cards/cards.component';
+import { LoadingComponent } from './comoponents/shared/loading/loading.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { NavbarComponent } from './comoponents/shared/navbar/navbar.component';
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

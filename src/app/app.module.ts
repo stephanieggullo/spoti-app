@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './comoponents/home/home.component';
@@ -15,6 +16,7 @@ import { NavbarComponent } from './comoponents/shared/navbar/navbar.component';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { CardsComponent } from './comoponents/cards/cards.component';
 import { LoadingComponent } from './comoponents/shared/loading/loading.component';
+import { DomSafePipe } from './pipes/dom-safe.pipe';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { LoadingComponent } from './comoponents/shared/loading/loading.component
     NavbarComponent,
     NoimagePipe,
     CardsComponent,
-    LoadingComponent
+    LoadingComponent,
+    DomSafePipe
   ],
   imports: [
     BrowserModule,
